@@ -2,7 +2,7 @@
 
 **WeatherNow** is a sleek and user-friendly weather application developed with Node.js. It allows users to retrieve real-time weather information for any city worldwide, providing a seamless and informative experience.
 
-![WeatherNow Demo](./demo.gif)
+![WeatherNow Demo](demo.gif)
 
 ---
 
