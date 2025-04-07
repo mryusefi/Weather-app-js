@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+
+
+    </head>
+    <body>
+        <div>
+            {{>header}}
+            <p>You can get your city weather</p>
+            <form>
+                <input type="text" name="city" placeholder="Enter city name" required>
+                <button type="submit">Get Weather</button>
+            </form>
+            <p id="first-message"></p>
+            <p id="temp-message"></p>
+            <p id="condition-message"></p>
+            <p id="location-message"></p>
+            <p id="date-message"></p>
+        </div>
+        <script src="/js/showWeather.js"></script>
+        {{>footer}}
+    </body>
+</html>

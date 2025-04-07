@@ -1,14 +1,13 @@
 const axios = require("axios");
 
 const getWeatherData = (location, callback) => {
-  const url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + location + "/2025-03-29?key=2NESYQP5ETBFW257SJGSFB4KY&unitGroup=metric&contentType=json"
+  const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=2NESYQP5ETBFW257SJGSFB4KY&unitGroup=metric&include=current&contentType=json`;
   axios.get(url)
     .then(response => {
-      const{temp,conditions,icon,datetime} = response.data.days[0];
+      const{temp,conditions,datetime} = response.data.days[0];
       callback(undefined , {
         temp: temp,
         condition:conditions,
-        icon:icon,
         location:response.data.resolvedAddress,
         date:datetime,
       } );
