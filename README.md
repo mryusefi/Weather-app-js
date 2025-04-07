@@ -110,5 +110,5 @@ See the [LICENSE](./LICENSE) file for details.
 
 ## 🙌 Credits
 
-- API by [OpenWeatherMap](https://openweathermap.org/)
+- API by [VisualCrossing](https://www.visualcrossing.com/)
 - UI and logic by [@mryusefi](https://github.com/mryusefi)
