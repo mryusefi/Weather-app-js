@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        {{>header}}
-        <img src="/img/aboutImg.jfif">
-        {{>footer}}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | WeatherNow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
-    </body>
+
+        {{>header}}
+
+
+    <div class="content-container">
+        <h2>About WeatherNow</h2>
+        <img src="/img/aboutImg.jfif" alt="Weather image" class="about-img">
+        <p>
+            WeatherNow is a simple, modern, and lightweight weather app that helps you check the current weather of any city in the world. Built using HTML, CSS, JavaScript, and powered by the OpenWeatherMap API, this app provides accurate, real-time data with a clean user-friendly interface.
+        </p>
+        <p>
+            Whether you're planning your trip, commuting to work, or just curious, WeatherNow gives you the weather info you need—fast and free!
+        </p>
+    </div>
+
+    <footer>
+        {{>footer}}
+    </footer>
+
+</body>
 </html>

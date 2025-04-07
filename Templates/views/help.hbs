@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        {{>header}}
-        <p>{{helpMsg}}</p>
-        {{>footer}}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help | WeatherNow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-    </body>
+<body>
+
+        {{>header}}
+
+    <div class="content-container">
+        <h2>Need Help?</h2>
+        <p>
+            To use WeatherNow, simply enter the name of a city into the search bar on the home page and click "Get
+            Weather".
+        </p>
+        <p>
+            The app will show the current temperature, weather condition, and location information. Make sure you have a
+            stable internet connection for real-time data.
+        </p>
+        <p>
+            If you encounter issues or bugs, feel free to contact us at <a href="mailto:mohammadreza.yousefi.2003@gmail.com">mohammadreza.yousefi.2003@gmail.com
+            </a>.
+        </p>
+    </div>
+
+    <footer>
+        {{>footer}}
+    </footer>
+
+</body>
+
 </html>

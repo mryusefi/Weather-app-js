@@ -8,6 +8,7 @@ const firstMessage = document.querySelector('#first-message');
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
+    console.log(location);
     firstMessage.textContent = "loading .. ";
     locationMassage.textContent = '';
     tempMassage.textContent = '';

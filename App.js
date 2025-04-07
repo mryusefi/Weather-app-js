@@ -18,7 +18,7 @@ hbs.registerPartials(partialsPath)
 
 app.get('',(req,res)=>{
   res.render("index",{
-    title:"Weather app",
+    title:"WeatherNow",
     name:"Mohammadreza Yousefi"
   })
 })
@@ -31,9 +31,10 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,res)=>{   
   res.render("help",{
     title:"Help",
-    name:"Mohammadreza Yousefi",
-    helpMsg:" This is some helpful text."
+    name:"Mohammadreza Yousefi"
   })
+
+
 })
 app.get('/weather',(req,res)=>{
     if(!req.query.location){
@@ -50,6 +51,9 @@ app.use((req, res) => {
     name: "Mohammadreza Yousefi",
   });
 });
+
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
